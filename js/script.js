@@ -1,8 +1,29 @@
-// Select DOM elements
-const incrementBtn = document.getElementById("increment");
-const decrementBtn = document.getElementById("decrement");
-const resetBtn = document.getElementById("reset");
-const counter = document.getElementById("counter");
+const container = document.querySelector(".container");
+
+// Creation elements
+const counter = document.createElement("div");
+counter.id = "counter";
+counter.textContent = "0";
+container.appendChild(counter);
+
+const buttonsContainer = document.createElement("div");
+buttonsContainer.className = "buttons-container";
+container.appendChild(buttonsContainer);
+
+const decrementBtn = document.createElement("button");
+decrementBtn.id = "decrement";
+decrementBtn.textContent = "-";
+buttonsContainer.appendChild(decrementBtn);
+
+const resetBtn = document.createElement("button");
+resetBtn.id = "reset";
+resetBtn.textContent = "Reset";
+buttonsContainer.appendChild(resetBtn);
+
+const incrementBtn = document.createElement("button");
+incrementBtn.id = "increment";
+incrementBtn.textContent = "+";
+buttonsContainer.appendChild(incrementBtn);
 
 // Initialize the counter
 let counterValue = 0;
