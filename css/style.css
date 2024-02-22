@@ -59,6 +59,7 @@ h1 {
   font-size: 25px;
   font-weight: 500;
   border-radius: 50%;
+  user-select: none;
 }
 
 #reset {
